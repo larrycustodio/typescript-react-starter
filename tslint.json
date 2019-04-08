@@ -1,0 +1,47 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {
+    "curly": true
+  },
+  "rules": {
+    "member-ordering": [true, {
+      "order": [
+        "public-static-field",
+        "protected-static-field",
+        "private-static-field",
+        "public-instance-field",
+        "protected-instance-field",
+        "private-instance-field",
+        "constructor",
+        "public-instance-method",
+        "protected-instance-method",
+        "private-instance-method",
+        "public-static-method",
+        "protected-static-method",
+        "private-static-method"
+      ]
+    }],
+    "no-magic-numbers": false,
+    "no-reference": true,
+    "no-var-requires": true,
+    "curly": [true, "ignore-same-line"],
+    "no-console": false,
+    "no-debugger": true,
+    "no-duplicate-super": true,
+    "no-return-await": true,
+    "interface-name": false,
+    "ordered-imports": true,
+    "object-literal-sort-keys": false,
+    "max-classes-per-file": false,
+    "no-unused-expression": false
+
+  },
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": ["node_modules"]
+  }
+}
